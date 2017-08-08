@@ -67,7 +67,7 @@ public class QuizActivity extends AppCompatActivity {
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mCurrentIndex = (mCurrentIndex+1)%mQuestions.length;
+//                mCurrentIndex = (mCurrentIndex+1)%mQuestions.length;
                 updateQuestion();
             }
         });
@@ -77,6 +77,7 @@ public class QuizActivity extends AppCompatActivity {
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstanceState");
+//        存储当前题目序号
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
     }
 
@@ -111,6 +112,8 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateQuestion(){
+        Log.d(TAG, "updateQuestion called");
+//        Log.d(TAG, "Updating question text for question #" + mCurrentIndex, new Exception());
         int question = mQuestions[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
     }
