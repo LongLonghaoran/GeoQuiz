@@ -11,4 +11,8 @@
     <string name="software_engineer">2.你是程序员吗?</string>
     <string name="effort">3.你觉得你不努力你会成功?</string>
     <string name="mr_wang">王总很厉害吧?</string>
+    <string name="warning_text">你确定要作弊？</string>
+    <string name="show_answer_button">显示答案</string>
+    <string name="cheat_button">查看答案</string>
+    <string name="judgment_toast">作弊可不行哦</string>
 </resources>
